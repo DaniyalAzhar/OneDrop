@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"/>
+        <EditText 
+           	android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#D8D8D8"
+            android:singleLine="true"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"/>
+        <EditText 
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#D8D8D8"
+            android:singleLine="true"
+            />
+        <Button                
+            	android:id="@+id/bSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Sign In"
+                android:background="@drawable/button_view"/>
+        <Button            
+            	android:id="@+id/bSignUp"    
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_view_2"
+                />
+
+        <TextView
+            android:id="@+id/tvForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:text="Forgot Password" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

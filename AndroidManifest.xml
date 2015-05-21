@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androminions.onedropdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="com.example.onedrop._OneDrop_CoverPage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androminions.onedrop.donor._OneDrop_Donor_ForgotPassword"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androminions.demo.donor._OneDrop_Donor_ForgotPassword" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androminions.onedrop.donor._OneDrop_Donor_SignIn"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androminions.demo.donor._OneDrop_Donor_SignIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androminions.onedrop.donor._OneDrop_Donor_SignUp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androminions.demo.donor._OneDrop_Donor_SignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androminions.onedrop.patient._OneDrop_Patient_SubmitRequest"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.demo._OneDrop_Patient_SubmitRequest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.onedrop.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.demo.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androminions.onedrop.donor._OneDrop_Donor_MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androminions.demo.donor._OneDrop_Donor_MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androminions.onedrop.patient._OneDrop_Patient_MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androminions.demo.patient._OneDrop_Patient_MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.androminions.onedrop.donor._OneDrop_Donor_AfterSignUp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.androminions.onedrop.donor._OneDrop_Donor_AfterSignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
